@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100%;
+background:url(https://cdn.pixabay.com/photo/2020/02/10/04/56/virus-4835301_1280.jpg);
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+
+}
+.container{
+    padding: 0;
+    width:30rem ;
+    height: 30rem;
+   margin: auto;
+   
+}
+.container1{
+    padding: 0;
+    width:30rem ;
+    height: 30rem;
+    margin: auto;
+   
+   
+}
+.twocont{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+    
+}
+
+
+.flag img{
+    padding: 0.7rem;
+    height: 5.0rem;
+    width: 5.0rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.cases{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.death{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.active{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.tdcase{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.recov{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.death1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.recov1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.activ{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.conf{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.container h3{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    height: 3rem;
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: aqua;
+}
+.container1 h3{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    height: 3rem;
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: aqua;
+}
+
+
+
+
+.info{
+    padding-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color:rgb(15, 56, 56);
+    font-weight: 180;
+    background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.info1{
+    padding-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color:rgb(15, 56, 56);
+    font-weight: 180;
+    background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.info2{
+    padding-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color:rgb(15, 56, 56);
+    font-weight: 180;
+    background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.india{
+    padding: 0;
+    width:30rem ;
+    height: 25rem;
+    margin: 1rem auto;
+   
+   
+   
+}
+.search-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.india h3{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    height: 3rem;
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: aqua;
+}
+
+.iactiv{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.ideath1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.iconf{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.irecov1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+/*@media only screen and (max-width:980px){
+    .container1{
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width:566px){
+    .container1{
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width:484px){
+    .container1{
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width:471px){
+    .container1{
+        margin-left: 20px;
+    }
+    .container{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width:454px){
+    .container1{
+        margin-left: 35px;
+    }
+    .container{
+        margin-left: 35px;
+    }
+}
+*/

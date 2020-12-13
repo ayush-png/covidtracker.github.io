@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="css/index.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+  #map{
+    width: 100%;
+    height: 50vh;
+  }
+</style>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Covid Tracker</title>
+  </head>
+  <body>
+    <div id='map'></div>
+    <div class="twocont">
+      <div class="container">
+          <h3>Global Covid Tracker</h3>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search By country" id="type">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search" onclick="search()"></i>
+                </button>
+            </div>
+        </div>
+          <div class="flag" id="image">
+              <img src="image/india.jpg" alt="" >
+          </div>
+      <hr>
+      <div class="info">
+          <div class="cases">
+              <p>Total Cases:</p>
+              <p id="cases">0</p>
+          </div>
+          <hr>
+      <div class="death">
+      <p>Total death:</p>
+              <p id="death">0</p>
+      </div>
+      <hr>
+      <div class="active">
+      <p>Critical Cases:</p>
+              <p id="critical_cases">0</p>
+      </div>
+      <div class="tdcase">
+        <p>Today's Cases:</p>
+                <p id="tdcases">0</p>
+        </div>
+        <div class="recov">
+          <p>Total Recovered:</p>
+                  <p id="rec">0</p>
+          </div>
+    </div>
+  </div>
+  
+  <div class="container1">
+    <h3>Covid Jharkhand Stat's</h3>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search By District" id="type1">
+      <div class="input-group-append">
+          <button class="btn btn-secondary" type="button">
+              <i class="fa fa-search" onclick="search1()"></i>
+          </button>
+      </div>
+  </div>
+  <div class="info1">
+    <div class="activ">
+        <p>Active Cases:</p>
+        <p id="act_case">0</p>
+    </div>
+    <hr>
+<div class="death1">
+<p>Total death:</p>
+        <p id="death1">0</p>
+</div>
+<hr>
+<div class="conf">
+<p>Confirmed Cases:</p>
+        <p id="confirm">0</p>
+</div>
+<hr>
+  <div class="recov1">
+    <p>Total Recovered:</p>
+            <p id="rec1">0</p>
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="india">
+  <h3>India's Covid Tracker</h3>
+  <div class="search-box">
+
+    <div class="form-group has-search">
+      
+      <input type="text" class="form-control" placeholder="Name Of State" id="type2">
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter District" id="type3">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button">
+          <i class="fa fa-search" onclick="search3()"></i>
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="info2">
+    <div class="iactiv">
+      <p>Active Cases:</p>
+      <p id="iact_case">0</p>
+  </div>
+  <hr>
+<div class="ideath1">
+<p>Total death:</p>
+      <p id="ideath1">0</p>
+</div>
+<hr>
+<div class="iconf">
+<p>Confirmed Cases:</p>
+      <p id="iconfirm">0</p>
+</div>
+<hr>
+<div class="irecov1">
+  <p>Total Recovered:</p>
+          <p id="irec1">0</p>
+  </div>
+</div>
+</div>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXl1c2hjb2RlaXQiLCJhIjoiY2tpanNrOTY4MDMzaTJ4bDRqZnF2OWNtbSJ9.zZjNMK_hb2UZCFU9_V1_xg';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10'
+    });
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="index.js"></script>
+   
+
+  </body>
+</html>
